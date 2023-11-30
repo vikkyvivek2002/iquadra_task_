@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ category_name }}</title>
+    <link rel="stylesheet" type="text/css" href="../static/category.css" />
+</head>
+
+<body>
+    <div id="maindiv">
+        <h1 id="headd">{{ category_name }}</h1>
+        <div class="boxes">
+            {% for contact in contacts %}
+            <a href="{{ url_for('contact', category_name=category_name, contact_index=loop.index0) }}" class="boxes">{{
+                contact['name'] }}</a>
+            {% endfor %}
+        </div>
+        <div style="margin-left: center;margin-top: 25px;">
+            <button> <a href="{{ url_for('dashboard') }}">Back to Dashboard</a></button>
+
+        </div>
+    </div>
+</body>
+
+</html>

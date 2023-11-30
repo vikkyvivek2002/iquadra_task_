@@ -1,0 +1,13 @@
+#headd{
+    text-align: center;
+    align-items: center;
+}
+#centt{
+    display: flex;
+    flex-direction: column;
+    background-color: aqua
+}
+.data{
+    background-color: antiquewhite;
+    font-size: larger;
+}

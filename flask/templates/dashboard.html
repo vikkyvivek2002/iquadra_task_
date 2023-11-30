@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" type="text/css" href="../static/dashboard.css" />
+</head>
+<body>
+    <div id="maindiv">
+        <div class="nav">
+    <h1 id="headd">Welcome, {{ user['name'] }}</h1>
+    <div id="menuu">
+        <a href="{{ url_for('profile') }}" style="color: black; text-decoration: none;">Profile</a>
+        <div style="margin-left: auto;">
+            <a href="{{ url_for('index') }}" style="color: black; text-decoration: none;">Logout</a>
+        </div>
+    </div>
+</div>
+    <h2 id="headd"style="color:green;font-size:30px">Menu:</h2>
+    <div class="boxout">
+        {% for category in categories %}
+            <a href="{{ url_for('category', category_name=category) }}" class="boxes">{{ category }}</a>
+        {% endfor %}
+    </div>
+</div>
+</body>
+</html>

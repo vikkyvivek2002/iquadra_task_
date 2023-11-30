@@ -1,0 +1,26 @@
+#headd{
+    text-align: center;
+    align-items: center;
+}
+#mainn{
+    display: flex;
+    flex-direction: column;
+    align-items:center ;
+
+}
+.cennt{
+    background-color: rgb(192, 220, 212);
+    width: 30%;
+    border-radius: 25%;
+    height: 50vh;
+    font-size: 30px;
+    text-align: left;
+    justify-content: center;
+    padding-left:35px;
+    padding-top: 35px;
+    /* align-items:center ; */
+    /* text-align: center ; */
+    /* padding: 20px;
+    justify-content: center; */
+
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ contact['name'] }}</title>
+    <link rel="stylesheet" type="text/css" href="../static//contact.css" />
+
+</head>
+
+<body>
+    <div id="mainn" style="text-align: center;
+    align-items: center;padding-top: 50px;">
+        <div class="cennt" style="background-color: turquoise;width: 50%;margin: auto;border-radius: 25px;text-align: center;font-size: 35px;padding: 10px;">
+            <h1>{{ contact['name'] }}</h1>
+            <div class="data" >
+            <p>Phone: {{ contact['phone'] }}</p>
+            <p>Date of Birth: {{ contact['dob'] }}</p>
+            <p>Address: {{ contact['address'] }}</p>
+            </div>
+            
+        </div>
+        <div style="margin-left: center;margin-top: 25px;">
+            <button>
+                <a href="{{ url_for('category', category_name=category_name) }}">Back to {{ category_name }}</a>
+            </button>
+
+        </div>
+        
+    </div>
+
+</body>
+
+</html>
